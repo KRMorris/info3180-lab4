@@ -9,6 +9,8 @@ This file creates your application.
 from app import app
 import os
 from flask import session,flash,render_template, request, redirect, url_for
+from iterdir import loopDir
+
 USERNAME="admin"
 PASSWORD="naseberry"
 SECRET_KEY="super secure key"
@@ -50,6 +52,15 @@ def add_entry():
     #g.db.commit()
     #flash('New entry was successfully posted')
     #return redirect(url_for('show_entries'))
+
+@app.route('/filelisting',methods=['POST','GET'])
+def fileList():
+    #flst=loopDir()
+   
+    return render_template("filelisting.html",flst=loopDir())
+
+#@app.route('/loopDir')
+
 
 @app.route('/login', methods=['POST','GET'])
 def login():

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block js %}
+{% endblock %}
+
+
+
+
+
+{% block main %}
+<ul id="psz">
+
+    {% for fl in flst%}
+        
+        {{ fl|safe }}
+        
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

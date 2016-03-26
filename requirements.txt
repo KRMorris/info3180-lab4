@@ -1,16 +1,10 @@
-# ----------------------
-# Flask
-# ----------------------
-flask
-
-
-# ----------------------
-# Testing
-# ----------------------
-mock
-
-
-# ----------------------
-# Production Server
-# ----------------------
-gunicorn
+Flask==0.10.1
+Flask-WTF==0.12
+gevent==1.1.0
+greenlet==0.4.9
+gunicorn==19.4.5
+itsdangerous==0.24
+Jinja2==2.8
+MarkupSafe==0.23
+Werkzeug==0.11.5
+WTForms==2.1
