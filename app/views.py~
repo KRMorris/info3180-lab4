@@ -9,7 +9,7 @@ This file creates your application.
 from app import app
 import os
 from flask import session,flash,render_template, request, redirect, url_for
-#from iterdir import loopDir
+from iterdir import loopDir
 
 USERNAME="admin"
 PASSWORD="naseberry"

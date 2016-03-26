@@ -73,7 +73,8 @@ def login():
             error = 'Invalid password' 
         else: 
             session['logged_in'] = True
-            flash('You were logged in') 
+            flash('You were logged in')
+            return redirect(url_for("files"))
 
     return render_template("login_form.html",error=error)
 
