@@ -11,6 +11,7 @@ lib
 # Python Packages
 *.egg
 *.egg-info
+.html~
 bin
 build
 dist
